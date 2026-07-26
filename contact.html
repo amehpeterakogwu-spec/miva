@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ameh Peter Akogwu</title>
+<meta name="description" content="Get in touch with Ameh Peter Akogwu.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="dot"></span>
+      apa<span class="session">@portfolio:~$</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="mainnav">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="planner.html">planner</a>
+      <a href="contact.html" class="active">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="prompt-label">mail --compose</span>
+      <h1>Get in Touch</h1>
+      <p style="max-width:640px;">Have a question, an opportunity, or just want to connect? Send a message below.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container contact-grid">
+
+      <div>
+        <div class="contact-info-item">
+          <div class="icon-chip">@</div>
+          <div>
+            <h4>Email</h4>
+            <p>a.peter4060@miva.edu.ng</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon-chip">&#9742;</div>
+          <div>
+            <h4>Phone</h4>
+            <p>0913 997 2685</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon-chip">&#8962;</div>
+          <div>
+            <h4>Location</h4>
+            <p>Makurdi, Benue State, Nigeria</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon-chip">in</div>
+          <div>
+            <h4>LinkedIn</h4>
+            <p><a href="https://www.linkedin.com/in/ameh-peter-akogwu-318353392" target="_blank" rel="noopener" style="color:var(--accent);">ameh-peter-akogwu</a></p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon-chip">&#9679;</div>
+          <div>
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/amehpeterakogwu-spec" target="_blank" rel="noopener" style="color:var(--accent);">amehpeterakogwu-spec</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <form id="contact-form" novalidate>
+          <div class="form-row" id="row-name">
+            <label for="field-name" style="display:block; font-family:var(--font-mono); font-size:0.78rem; color:var(--text-faint); margin-bottom:6px; text-transform:uppercase;">Name</label>
+            <input type="text" id="field-name" name="name" placeholder="Your full name">
+            <div class="error">Please enter your name.</div>
+          </div>
+
+          <div class="form-row" id="row-email">
+            <label for="field-email" style="display:block; font-family:var(--font-mono); font-size:0.78rem; color:var(--text-faint); margin-bottom:6px; text-transform:uppercase;">Email Address</label>
+            <input type="email" id="field-email" name="email" placeholder="you@example.com">
+            <div class="error">Please enter a valid email address.</div>
+          </div>
+
+          <div class="form-row" id="row-phone">
+            <label for="field-phone" style="display:block; font-family:var(--font-mono); font-size:0.78rem; color:var(--text-faint); margin-bottom:6px; text-transform:uppercase;">Phone Number</label>
+            <input type="tel" id="field-phone" name="phone" placeholder="Digits only, e.g. 09139972685">
+            <div class="error">Phone number must contain digits only.</div>
+          </div>
+
+          <div class="form-row" id="row-message">
+            <label for="field-message" style="display:block; font-family:var(--font-mono); font-size:0.78rem; color:var(--text-faint); margin-bottom:6px; text-transform:uppercase;">Message</label>
+            <textarea id="field-message" name="message" placeholder="What would you like to say?"></textarea>
+            <div class="error">Please enter a message.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>&copy; <span data-year></span> Ameh Peter Akogwu. Built for COS 106 — Introduction to Web Technologies.</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ameh-peter-akogwu-318353392" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/amehpeterakogwu-spec" target="_blank" rel="noopener">GitHub</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

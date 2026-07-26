@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Ameh Peter Akogwu</title>
+<meta name="description" content="Interactive academic planner: add, complete, and delete tasks.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="dot"></span>
+      apa<span class="session">@portfolio:~$</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="mainnav">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="planner.html" class="active">planner</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="prompt-label">./planner --run</span>
+      <h1>Academic Planner</h1>
+      <p style="max-width:640px;">Track assignments, deadlines, and revision tasks. Everything is saved to this browser, so your list is still here next time you visit.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="planner-panel">
+
+        <div class="stat-row">
+          <div class="stat"><b id="stat-total">0</b>total tasks</div>
+          <div class="stat"><b id="stat-pending">0</b>pending</div>
+          <div class="stat"><b id="stat-done">0</b>completed</div>
+        </div>
+
+        <form id="task-form" class="planner-form">
+          <div class="field" style="grid-column: 1;">
+            <label for="task-title">Task</label>
+            <input type="text" id="task-title" name="task-title" placeholder="e.g. Submit Cybersecurity assignment" required>
+          </div>
+          <div class="field">
+            <label for="task-due">Due date</label>
+            <input type="date" id="task-due" name="task-due">
+          </div>
+          <div class="field">
+            <label for="task-priority">Priority</label>
+            <select id="task-priority" name="task-priority">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div class="field" style="display:flex; align-items:flex-end;">
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Add task</button>
+          </div>
+        </form>
+
+        <div class="planner-filters">
+          <button class="chip-btn active" data-filter="all">All</button>
+          <button class="chip-btn" data-filter="active">Pending</button>
+          <button class="chip-btn" data-filter="done">Completed</button>
+        </div>
+
+        <ul class="task-list" id="task-list"></ul>
+        <div class="empty-state" id="empty-state">No tasks here yet — add one above to get started.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>&copy; <span data-year></span> Ameh Peter Akogwu. Built for COS 106 — Introduction to Web Technologies.</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ameh-peter-akogwu-318353392" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/amehpeterakogwu-spec" target="_blank" rel="noopener">GitHub</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>
